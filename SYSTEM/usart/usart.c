@@ -152,7 +152,7 @@ void USART3_IRQHandler(void)                	//串口1中断服务程序
 	{
 		if ( USART_GetITStatus(USART3,USART_IT_IDLE) != RESET )
 		{
-      data_receive_buffer[USART_REC_LEN-1] = USART3->SR;
+      		data_receive_buffer[USART_REC_LEN-1] = USART3->SR;
 			data_receive_buffer[USART_REC_LEN-1] = USART3->DR; //USART_IT_IDLE clear
 			data_receive_buffer[USART_REC_LEN-1] = 1;
 			DMA_Cmd(DMA1_Channel3,DISABLE);

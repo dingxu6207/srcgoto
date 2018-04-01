@@ -35,7 +35,7 @@ int main(void)
         {
             data_receive_buffer[USART_REC_LEN - 1] = 0; //清理标志
 					
-						SHUTTER_CONTROL( data_receive_buffer, shutter); //相机快门线控制
+			SHUTTER_CONTROL( data_receive_buffer, shutter); //相机快门线控制
 					
             decode_state = LX200( data_receive_buffer, current_pos, target_pos ); //LX200协议解析
             REMOTE_KEY_CONTROL(remote_key_state,decode_state); //无线按键控制解码
@@ -81,7 +81,7 @@ int main(void)
                 current_pos[0] = CURRENT_POS_RA ( target_ra, ra_step, RA_STP_ANGLE );   //更新当前指向
                 current_pos[1] = CURRENT_POS_DEC ( target_dec, dec_step, DEC_STP_ANGLE );
             }
-						timer_counter++;
+				timer_counter++;
         }
 				
 				if(shutter[1]!=0&&timer_counter>=30769)//快门控制

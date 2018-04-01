@@ -1,0 +1,8 @@
+---- DMA_SetCurrDataCounter Matches (7 in 5 files) ----
+dma.c (SYSTEM\dma): 	DMA_SetCurrDataCounter(DMA1_Channel2,size);//DMA通道的DMA缓存的大小
+PWM.htm (OBJ):<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetCurrDataCounter
+PWM.htm (OBJ):<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DMA_SetCurrDataCounter
+PWM.htm (OBJ):<P><STRONG><a name="[a6]"></a>DMA_SetCurrDataCounter</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_dma.o(.text))
+stm32f10x_dma.c (STM32F10x_FWLib\src):void DMA_SetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx, uint16_t DataNumber)
+stm32f10x_dma.h (STM32F10x_FWLib\inc):void DMA_SetCurrDataCounter(DMA_Channel_TypeDef* DMAy_Channelx, uint16_t DataNumber); 
+usart.c (SYSTEM\usart):			DMA_SetCurrDataCounter(DMA1_Channel3,USART_REC_LEN);  //reset size
